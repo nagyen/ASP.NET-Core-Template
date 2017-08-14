@@ -1,0 +1,25 @@
+{
+    "isShellCommand": true,
+    "tasks": [
+        {
+            "taskName": "build-web",
+            "command": "dotnet",
+            "args": [
+                "build",
+                "${workspaceRoot}/web/web.csproj"
+            ],
+            "isBuildCommand": true,
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "taskName": "build-tests",
+            "command": "dotnet",
+            "args": [
+                "build",
+                "${workspaceRoot}/tests/tests.csproj"
+            ],
+            "isBuildCommand": true,
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}
